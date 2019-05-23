@@ -1,0 +1,55 @@
+
+
+
+libname cen ODBC dsn=idi_clean_&VERSION._srvprd schema=cen_clean user=statsnz\&sysuserid password="&sqlpass";
+libname cenpit ODBC dsn=idi_sandpit_srvprd schema=clean_read_cen user=statsnz\&sysuserid password="&sqlpass";
+
+libname dol ODBC dsn=idi_clean_&VERSION._srvprd schema=dol_clean user=statsnz\&sysuserid password="&sqlpass";
+libname hlfs ODBC dsn=idi_clean_&VERSION._srvprd schema=hlfs_clean user=statsnz\&sysuserid password="&sqlpass";
+libname leed ODBC dsn=idi_clean_&VERSION._srvprd schema=from_leed_clean user=statsnz\&sysuserid password="&sqlpass";
+libname moe ODBC dsn=idi_clean_&VERSION._srvprd schema=moe_clean user=statsnz\&sysuserid password="&sqlpass";
+libname msd_leed ODBC dsn=idi_clean_&VERSION._srvprd schema=from_leed_clean user=statsnz\&sysuserid password="&sqlpass";
+libname msd ODBC dsn=idi_clean_&VERSION._srvprd schema=msd_clean user=statsnz\&sysuserid password="&sqlpass";
+libname sla ODBC dsn=idi_clean_&VERSION._srvprd schema=sla_clean user=statsnz\&sysuserid password="&sqlpass";
+libname moe ODBC dsn=idi_clean_&VERSION._srvprd schema=moe_clean user=statsnz\&sysuserid password="&sqlpass";
+libname cor ODBC dsn=idi_clean_&VERSION._srvprd schema=cor_clean user=statsnz\&sysuserid password="&sqlpass";
+libname moj ODBC dsn=idi_clean_&VERSION._srvprd schema=moj_clean user=statsnz\&sysuserid password="&sqlpass";
+libname acc ODBC dsn=idi_clean_&VERSION._srvprd schema=acc_clean user=statsnz\&sysuserid password="&sqlpass";
+libname cus ODBC dsn=idi_clean_&VERSION._srvprd schema=cus_clean user=statsnz\&sysuserid password="&sqlpass";
+libname lisnz ODBC dsn=idi_clean_&VERSION._srvprd schema=lisnz_clean user=statsnz\&sysuserid password="&sqlpass";
+libname ms ODBC dsn=idi_clean_&VERSION._srvprd schema=ms_clean user=statsnz\&sysuserid password="&sqlpass";
+libname sofie ODBC dsn=idi_clean_&VERSION._srvprd schema=sofie_clean user=statsnz\&sysuserid password="&sqlpass";
+libname dbh ODBC dsn=idi_clean_&VERSION._srvprd schema=dbh_clean user=statsnz\&sysuserid password="&sqlpass";
+libname br ODBC dsn=idi_clean_&VERSION._srvprd schema=br_clean user=statsnz\&sysuserid password="&sqlpass";
+libname cyf ODBC dsn=idi_clean_&VERSION._srvprd schema=cyf_clean user=statsnz\&sysuserid password="&sqlpass";
+libname dia ODBC dsn=idi_clean_&VERSION._srvprd schema=dia_clean user=statsnz\&sysuserid password="&sqlpass";
+libname pol ODBC dsn=idi_clean_&VERSION._srvprd schema=pol_clean user=statsnz\&sysuserid password="&sqlpass";
+libname moh ODBC dsn=idi_clean_&VERSION._srvprd schema=moh_clean user=statsnz\&sysuserid password="&sqlpass";
+libname data ODBC dsn=idi_clean_&VERSION._srvprd schema=data user=statsnz\&sysuserid password="&sqlpass";
+libname wff ODBC dsn=idi_clean_&VERSION._srvprd schema=wff_clean user=statsnz\&sysuserid password="&sqlpass";
+libname ird ODBC dsn=idi_clean_&VERSION._srvprd schema=ir_clean user=statsnz\&sysuserid password="&sqlpass";
+libname hnz ODBC dsn=idi_clean_&VERSION._srvprd schema=hnz_clean user=statsnz\&sysuserid password="&sqlpass";
+libname hes ODBC dsn=idi_clean_&VERSION._srvprd schema=hes_clean user=statsnz\&sysuserid password="&sqlpass";
+
+
+libname sanddol ODBC dsn=idi_sandpit_srvprd schema="clean_read_DOL" user=statsnz\&sysuserid password="&sqlpass";
+libname sandmoe ODBC dsn=idi_sandpit_srvprd schema="clean_read_moe" user=statsnz\&sysuserid password="&sqlpass";
+libname sandir ODBC dsn=idi_sandpit_srvprd schema="clean_read_IR" user=statsnz\&sysuserid password="&sqlpass";
+libname sandhnz ODBC dsn=idi_sandpit_srvprd schema="clean_read_HNZ" user=statsnz\&sysuserid password="&sqlpass";
+
+libname sandmoh ODBC dsn=idi_sandpit_srvprd schema="clean_read_MOH_Health_Tracker" user=statsnz\&sysuserid password="&sqlpass";
+libname sandmoh2 ODBC dsn=idi_sandpit_srvprd schema="clean_read_MOH_PRIMHD" user=statsnz\&sysuserid password="&sqlpass";
+libname sandmoh3 ODBC dsn=idi_sandpit_srvprd schema="clean_read_MOH_NIR" user=statsnz\&sysuserid password="&sqlpass";
+libname sandmoh4 ODBC dsn=idi_sandpit_srvprd schema="clean_read_MOH_B4SC" user=statsnz\&sysuserid password="&sqlpass";
+libname sandmoh5 ODBC dsn=idi_sandpit_srvprd schema="clean_read_MOH_PHARMACEUTICAL" user=statsnz\&sysuserid password="&sqlpass";
+libname sandmoj ODBC dsn=idi_sandpit_srvprd schema="clean_read_MOJ" user=statsnz\&sysuserid password="&sqlpass";
+libname sanddia ODBC dsn=idi_sandpit_srvprd schema="clean_read_DIA" user=statsnz\&sysuserid password="&sqlpass";
+
+libname sandcyf ODBC dsn=idi_sandpit_srvprd schema="clean_read_CYF" user=statsnz\&sysuserid password="&sqlpass";
+
+libname sandwff ODBC dsn=idi_sandpit_srvprd schema="clean_read_WFF" user=statsnz\&sysuserid password="&sqlpass";
+
+libname sandmaa ODBC dsn=idi_sandpit_srvprd schema="DL_MAA2017_31" user=statsnz\&sysuserid password="&sqlpass";
+libname metadata ODBC dsn=idi_metadata_srvprd schema=clean_read_CLASSIFICATIONS user=statsnz\&sysuserid password="&sqlpass";
+libname cap ODBC dsn=idi_clean_&VERSION._srvprd schema=cap_clean user=statsnz\&sysuserid password="&sqlpass";
+libname security ODBC dsn=idi_clean_&VERSION._srvprd schema=security user=statsnz\&sysuserid password="&sqlpass";
